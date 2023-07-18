@@ -1,0 +1,7 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <h1>Promouvoir en Admin : {{ user.nom ~ ' ' ~ user.prenom }} </h1>
+    <h4>Veuillez entrer le code secret afin de confirmer la promotion :</h4>
+    {{ form(formAdmin) }}
+{% endblock %}

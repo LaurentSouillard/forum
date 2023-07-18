@@ -1,0 +1,24 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Forum{% endblock %}
+
+{% block content %}
+
+    <h1 class="m-3">Liste des sujets du Forum</h1>
+
+
+        <div class="row justify-content-center d-flex">
+
+            {% for sujet in sujets %}
+                    <div class="card m-3 bg-secondary text-light text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-info">{{sujet.dateDeCreation | date('d-m-Y \à H\\hi')}}</h5>
+                            <p class="card-text">{{ sujet.contenu | slice(0,50) }}...</p>
+                            <a href="" class="btn btn-primary">Lire le sujet</a>
+                        </div>
+                    </div>
+
+            {% endfor %}
+
+        </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+<div class="row m-5 justify-content-center bg-secondary">
+
+    <div class="col card text-white bg-primary m-3 text-center" style="max-width: 18rem;">
+    <a href="" class="text-light text-decoration-none">
+        <div class="card-header fw-bold">Forum</div>
+        <div class="card-body">
+            <h5 class="card-title">Consultation</h5>
+            <p class="card-text">Consultez les sujets déjà ouverts, vous trouverez peut-être votre réponse</p>
+        </div>
+    </a>
+    </div>
+
+     <div class="col card text-white bg-primary m-3 text-center" style="max-width: 18rem;">
+        <a href="{{ path('sujet_ajout') }}" class="text-light text-decoration-none">
+            <div class="card-header fw-bold">Sujet</div>
+            <div class="card-body">
+                <h5 class="card-title">Suggestion</h5>
+                <p class="card-text">Vous n'avez pas trouvé de réponse, pas de problème créer votre sujet de demande </p>
+            </div>
+        </a>
+    </div>
+
+</div>
+{% endblock %}

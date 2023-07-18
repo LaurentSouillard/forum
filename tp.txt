@@ -1,0 +1,11 @@
+- Créez un projet "Forum"
+- dans ce projet le but et de pouvoir arriver sur une page de contact et remplir un formulaire permettant de demander de l'aide sur un certain sujet (les sujets sont categorisée ex: code, hardware...)
+- recuperer les demades etablies dans une page "les demande" classé sous les categories de sujets
+- faite en sorte de pouvoir apporter de l'aide en repondant sous forme de commentaire
+
+
+- Créez un User puis un espace inscription et connexion
+- faites en sorte d'envoyer un email de confirmation d'inscription contenant une url permetant à l'utilisateur d'activer son compte
+- bloqez la connexion aux user dont le compte n'est pas encore actif
+- créez la relation entre User et Commentaire puis User et sujet
+- faites le traitement necessaire à chaque étape ainsi que l'affiche
